@@ -1,0 +1,13 @@
+package Dev.lewi.TaskManagement.dto;
+
+import Dev.lewi.TaskManagement.utils.enums.TaskPriority;
+import Dev.lewi.TaskManagement.utils.enums.TaskStatus;
+import lombok.Data;
+
+@Data
+public class TaskUpdateDto {
+    private String title;
+    private String description;
+    private TaskStatus status;
+    private TaskPriority priority;
+}
