@@ -1,0 +1,16 @@
+ALTER TABLE tasks
+ADD CONSTRAINT check_task_status
+CHECK (status IN ('PENDING', 'IN_PROGRESS', 'COMPLETED', 'CANCELLED'));
+
+ALTER TABLE tasks
+ADD CONSTRAINT check_task_priority
+CHECK (priority IN ('LOW', 'MEDIUM', 'HIGH', 'URGENT'));
+
+ALTER TABLE users
+ADD CONSTRAINT unique_user_email UNIQUE (email);
+
+ALTER TABLE users
+ALTER COLUMN email SET NOT NULL;
+
+ALTER TABLE users
+ALTER COLUMN name SET NOT NULL;
