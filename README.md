@@ -31,6 +31,9 @@
 - `PUT /api/tasks/{task_id}` - Update an existing task
 - `DELETE /api/tasks/{task_id}` - Delete a task
 
+## API DOCUMENTATION
+[TaskManagement](https://documenter.getpostman.com/view/32744104/2sB2qgeeM6)
+
 ## 🚦 Prerequisites
 ### Before running this application, make sure you have the following installed:
 
