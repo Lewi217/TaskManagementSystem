@@ -103,4 +103,36 @@ JWT_SECRET=production_jwt_secret
 POSTGRES_PASSWORD=production_db_password
 ```
 
+## 🚀 CI/CD Pipeline
+**This project uses GitHub Actions for automated CI/CD. The pipeline includes:**
+**1.Workflow Triggers**
+
+- Push to main branch
+- Pull requests to main branch
+- Manual workflow dispatch
+
+**2.Testing**
+
+- Unit tests
+- Integration tests
+- Test coverage reporting
+
+
+**3.Build & Push**
+
+- Build Docker images
+- Push to container registry
+- Tag with commit SHA and latest
+
+
+
+## Setting Up CI/CD
+
+Required GitHub Secrets:
+```
+DOCKER_USERNAME=your_docker_hub_username
+DOCKER_PASSWORD=your_docker_hub_password
+JWT_SECRET=production_jwt_secret
+POSTGRES_PASSWORD=production_db_password
+```
   
